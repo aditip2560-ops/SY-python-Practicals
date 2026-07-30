@@ -1,9 +1,15 @@
-import time
+print("---Traffic Signal Simulation System ---")
 
-print(" Red - Stop")
-time.sleep(3)
+signal=input("Enter the Signal Colour:").lower()
 
-print("Yellow - Wait")
-time.sleep(2)
+if signal=="red":
+    print("Action: STOP")
 
-print(" Green - Go")
+elif signal=="yellow":
+    print("Action: SLOW DOWN")
+
+elif signal=="green":
+    print("Action: GO")
+
+else:
+    print("Invalid Signal enter Red/Yellow/Green :")
